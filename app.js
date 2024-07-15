@@ -249,6 +249,23 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 Complete Exercise 15 in the space below:
 */
 
+// const total = (numArrays) => {
+//     let total = 0;
+    
+//     for (let i = 0; i < numArrays.length; i++) {
+
+//     for (let j = 0; j < numArrays[i].length; j++) {    
+    
+//     total += numArrays[i][j]
+// }
+// }
+// }
+let total = 0;
+numArrays.forEach(array => {
+    array.forEach((num) => {
+        total += num;
+    })
+})
 
 
-// console.log('Exercise 15 result:\n', total);
+console.log('Exercise 15 result:\n', total);
